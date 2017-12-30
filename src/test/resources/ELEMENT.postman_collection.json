@@ -1,0 +1,668 @@
+{
+	"info": {
+		"name": "ELEMENT",
+		"_postman_id": "5237b637-4a41-3196-56a0-9c864208d8ea",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/login - riccardo@example.com",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"riccardo@example.com\", \n\t\"password\": \"riccardo\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/login - emilia@example.com",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"emilia@example.com\", \n\t\"password\": \"emilia\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/insurance-policy - riccardo",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyaWNjYXJkb0BleGFtcGxlLmNvbSIsImV4cCI6MTUxNTI5NDcyMH0.GEgTeoWp_Nx10Ua46K7_JucDjoY82K4Uy8YIYiUF89HFYsj0v7N9zhI1twkBEuA-9qE-YhK39iYsMFH9NauUEg"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/insurance-policy/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"insurance-policy",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "4a69cac9-b381-416f-b4f9-dc8f6f6cc4a9",
+					"name": "/insurance-policy - expected result",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyaWNjYXJkb0BleGFtcGxlLmNvbSIsImV4cCI6MTUxNTI5NDcyMH0.GEgTeoWp_Nx10Ua46K7_JucDjoY82K4Uy8YIYiUF89HFYsj0v7N9zhI1twkBEuA-9qE-YhK39iYsMFH9NauUEg"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"riccardo@example.com\", \n\t\"password\": \"riccardo\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/insurance-policy/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"insurance-policy",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 28 Dec 2017 04:19:15 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Expires",
+							"value": "0",
+							"name": "Expires",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "JSESSIONID=9C827D9BF4B2C77E3552C6163E93C1C9; Path=/; HttpOnly",
+							"name": "Set-Cookie",
+							"description": "an HTTP cookie"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "X-Application-Context",
+							"value": "application",
+							"name": "X-Application-Context",
+							"description": "Custom header"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"name": "X-Content-Type-Options",
+							"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY",
+							"name": "X-Frame-Options",
+							"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block",
+							"name": "X-XSS-Protection",
+							"description": "Cross-site scripting (XSS) filter"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"httpOnly": true,
+							"domain": "localhost",
+							"path": "/",
+							"secure": false,
+							"value": "9C827D9BF4B2C77E3552C6163E93C1C9",
+							"key": "JSESSIONID"
+						}
+					],
+					"responseTime": 312,
+					"body": "[{\"id\":1,\"customer\":{\"email\":\"riccardo@example.com\"},\"module\":{\"id\":1,\"name\":\"Bike\"},\"selectedCoverage\":2500.00,\"tariff\":750.00,\"totalReimbursement\":2500.00},{\"id\":2,\"customer\":{\"email\":\"riccardo@example.com\"},\"module\":{\"id\":2,\"name\":\"Jewelry\"},\"selectedCoverage\":1000.00,\"tariff\":50.00,\"totalReimbursement\":1000.00},{\"id\":3,\"customer\":{\"email\":\"riccardo@example.com\"},\"module\":{\"id\":3,\"name\":\"Electronics\"},\"selectedCoverage\":9000.00,\"tariff\":2100.00,\"totalReimbursement\":6000.00}]"
+				}
+			]
+		},
+		{
+			"name": "/insurance-policy/1 - riccardo",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyaWNjYXJkb0BleGFtcGxlLmNvbSIsImV4cCI6MTUxNTI5NDcyMH0.GEgTeoWp_Nx10Ua46K7_JucDjoY82K4Uy8YIYiUF89HFYsj0v7N9zhI1twkBEuA-9qE-YhK39iYsMFH9NauUEg"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/insurance-policy/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"insurance-policy",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "cab094fe-2e21-4d2e-a842-3326577dff33",
+					"name": "/insurance-policy/1 - expected result",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyaWNjYXJkb0BleGFtcGxlLmNvbSIsImV4cCI6MTUxNTI5NDcyMH0.GEgTeoWp_Nx10Ua46K7_JucDjoY82K4Uy8YIYiUF89HFYsj0v7N9zhI1twkBEuA-9qE-YhK39iYsMFH9NauUEg"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/insurance-policy/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"insurance-policy",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 28 Dec 2017 04:21:08 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Expires",
+							"value": "0",
+							"name": "Expires",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "X-Application-Context",
+							"value": "application",
+							"name": "X-Application-Context",
+							"description": "Custom header"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"name": "X-Content-Type-Options",
+							"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY",
+							"name": "X-Frame-Options",
+							"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block",
+							"name": "X-XSS-Protection",
+							"description": "Cross-site scripting (XSS) filter"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"httpOnly": true,
+							"domain": "localhost",
+							"path": "/",
+							"secure": false,
+							"value": "9C827D9BF4B2C77E3552C6163E93C1C9",
+							"key": "JSESSIONID"
+						}
+					],
+					"responseTime": 59,
+					"body": "{\"id\":1,\"customer\":{\"email\":\"riccardo@example.com\"},\"module\":{\"id\":1,\"name\":\"Bike\"},\"selectedCoverage\":2500.00,\"tariff\":750.00,\"totalReimbursement\":2500.00}"
+				}
+			]
+		},
+		{
+			"name": "/insurance-policy - emilia",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJlbWlsaWFAZXhhbXBsZS5jb20iLCJleHAiOjE1MTUyOTQ4OTl9.pSsckd5Ai6UbJl9Gs0F7X-RN5nC00dUeN6Igv7frmoOPQ4195M5tn-C8MpZIwbNy8cS82yF4StErwnkMx19XEw"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/insurance-policy/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"insurance-policy",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "6b93da31-1d30-4d05-8a21-44aed579ff8e",
+					"name": "/insurance-policy - expected result",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJlbWlsaWFAZXhhbXBsZS5jb20iLCJleHAiOjE1MTUyOTQ4OTl9.pSsckd5Ai6UbJl9Gs0F7X-RN5nC00dUeN6Igv7frmoOPQ4195M5tn-C8MpZIwbNy8cS82yF4StErwnkMx19XEw"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/insurance-policy/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"insurance-policy",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 28 Dec 2017 04:21:55 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Expires",
+							"value": "0",
+							"name": "Expires",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "X-Application-Context",
+							"value": "application",
+							"name": "X-Application-Context",
+							"description": "Custom header"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"name": "X-Content-Type-Options",
+							"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY",
+							"name": "X-Frame-Options",
+							"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block",
+							"name": "X-XSS-Protection",
+							"description": "Cross-site scripting (XSS) filter"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"httpOnly": true,
+							"domain": "localhost",
+							"path": "/",
+							"secure": false,
+							"value": "9C827D9BF4B2C77E3552C6163E93C1C9",
+							"key": "JSESSIONID"
+						}
+					],
+					"responseTime": 21,
+					"body": "[{\"id\":4,\"customer\":{\"email\":\"emilia@example.com\"},\"module\":{\"id\":4,\"name\":\"Sports Equipment\"},\"selectedCoverage\":5500.00,\"tariff\":1650.00,\"totalReimbursement\":5500.00},{\"id\":5,\"customer\":{\"email\":\"emilia@example.com\"},\"module\":{\"id\":4,\"name\":\"Sports Equipment\"},\"selectedCoverage\":1750.00,\"tariff\":525.00,\"totalReimbursement\":1750.00}]"
+				}
+			]
+		},
+		{
+			"name": "/insurance-policy - riccardo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyaWNjYXJkb0BleGFtcGxlLmNvbSIsImV4cCI6MTUxNTI5NDcyMH0.GEgTeoWp_Nx10Ua46K7_JucDjoY82K4Uy8YIYiUF89HFYsj0v7N9zhI1twkBEuA-9qE-YhK39iYsMFH9NauUEg"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customer\": {\n        \"email\": \"riccardo@example.com\"\n    },\n    \"module\": {\n        \"id\": 4,\n        \"name\": \"Sports Equipment\"\n    },\n    \"selectedCoverage\": 5900\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/insurance-policy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"insurance-policy"
+					]
+				},
+				"description": "Create a new Insurance Policy"
+			},
+			"response": []
+		},
+		{
+			"name": "/insurance-policy - riccardo",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyaWNjYXJkb0BleGFtcGxlLmNvbSIsImV4cCI6MTUxNTI5NDcyMH0.GEgTeoWp_Nx10Ua46K7_JucDjoY82K4Uy8YIYiUF89HFYsj0v7N9zhI1twkBEuA-9qE-YhK39iYsMFH9NauUEg"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 3,\n    \"customer\": {\n        \"email\": \"riccardo@example.com\"\n    },\n    \"module\": {\n        \"id\": 1,\n        \"name\": \"Bike\"\n    },\n    \"selectedCoverage\": 900\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/insurance-policy/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"insurance-policy",
+						"3"
+					]
+				},
+				"description": "Update a Insurance Policy"
+			},
+			"response": []
+		},
+		{
+			"name": "/insurance-policy - riccardo (valid)",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyaWNjYXJkb0BleGFtcGxlLmNvbSIsImV4cCI6MTUxNTI5NDcyMH0.GEgTeoWp_Nx10Ua46K7_JucDjoY82K4Uy8YIYiUF89HFYsj0v7N9zhI1twkBEuA-9qE-YhK39iYsMFH9NauUEg"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 3,\n    \"customer\": {\n        \"email\": \"riccardo@example.com\"\n    },\n    \"module\": {\n        \"id\": 1,\n        \"name\": \"Bike\"\n    },\n    \"selectedCoverage\": 900\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/insurance-policy/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"insurance-policy",
+						"3"
+					]
+				},
+				"description": "Delete a new Insurance Policy for logged customer"
+			},
+			"response": []
+		},
+		{
+			"name": "/insurance-policy - riccardo (invalid)",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyaWNjYXJkb0BleGFtcGxlLmNvbSIsImV4cCI6MTUxNTI5NDcyMH0.GEgTeoWp_Nx10Ua46K7_JucDjoY82K4Uy8YIYiUF89HFYsj0v7N9zhI1twkBEuA-9qE-YhK39iYsMFH9NauUEg"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 3,\n    \"customer\": {\n        \"email\": \"riccardo@example.com\"\n    },\n    \"module\": {\n        \"id\": 1,\n        \"name\": \"Bike\"\n    },\n    \"selectedCoverage\": 900\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/insurance-policy/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"insurance-policy",
+						"4"
+					]
+				},
+				"description": "Try to delete a Insurance Policy from another customer or an inexistent one"
+			},
+			"response": []
+		}
+	]
+}
